@@ -7,7 +7,7 @@ def main():
     st.title("Excel Data Viewer")
     
     # Upload Excel file
-    uploaded_file = st.file_uploader("CO2 Emissions_Canada.cvs", type=["csv"])
+    uploaded_file = st.file_uploader("CO2 Emissions_Canada.cvs", type=["xlsx"])
     
     if uploaded_file is not None:
         try:
