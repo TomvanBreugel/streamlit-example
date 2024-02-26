@@ -35,7 +35,7 @@ def main():
             # Display a bar chart for selected column
             bar_chart_column = st.selectbox("Select a column for bar chart", df.columns)
             if bar_chart_column:
-                st.bar_chart(df[bar_chart_column].value_counts())
+                st.bar_chart(df[CO2 Emissions(g/km)].value_counts())
                 
         except Exception as e:
             st.error(f"An error occurred: {e}")
