@@ -37,22 +37,6 @@ def main():
             if bar_chart_column:
                 st.bar_chart(df[CO2 Emissions(g/km)].value_counts())
 
-
-            # Column selection for x and y axes
-            x_column = st.selectbox("Make", df.columns)
-            y_column = st.selectbox("CO2 Emission(g/km)", df.columns)
-            
-            # Column selection for circle size
-            size_column = st.selectbox("Select Circle Size Data", df.columns)
-            
-            # Scatter plot with circles
-            fig, ax = plt.subplots(figsize=(10, 8))
-            ax.scatter(df[x_column], df[y_column], s=df[size_column]*100, alpha=0.5)
-            ax.set_xlabel(x_column)
-            ax.set_ylabel(y_column)
-            ax.set_title("Data Visualization in Circles")
-            st.pyplot(fig)
-
 if __name__ == "__main__":
     main()
 
