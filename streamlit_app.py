@@ -3,6 +3,9 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+data = pd.read_csv('CO2 Emissions_Canada.csv', index_col = 0)
+
+
 """
 # Welcome to Streamlit!
 
