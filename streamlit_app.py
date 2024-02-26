@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 
 def main():
-    st.title("CSV Data Viewer")
+    st.title("CO2 Emissie Canada")
     
     # Upload CSV file
     uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
