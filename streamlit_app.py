@@ -39,8 +39,8 @@ def main():
 
 
             # Column selection for x and y axes
-            x_column = st.selectbox("Select X-axis Data", df.columns)
-            y_column = st.selectbox("Select Y-axis Data", df.columns)
+            x_column = st.selectbox("Make", df.columns)
+            y_column = st.selectbox("CO2 Emission(g/km)", df.columns)
             
             # Column selection for circle size
             size_column = st.selectbox("Select Circle Size Data", df.columns)
