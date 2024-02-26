@@ -37,6 +37,3 @@ def main():
             if bar_chart_column:
                 st.bar_chart(df[bar_chart_column].value_counts())
 
-if __name__ == "__main__":
-    main()
-
