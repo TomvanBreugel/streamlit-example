@@ -37,3 +37,9 @@ def main():
             if bar_chart_column:
                 st.bar_chart(df[bar_chart_column].value_counts())
 
+        except Exception as e:
+            st.error(f"An error occurred: {e}")
+
+if __name__ == "__main__":
+    main()
+
